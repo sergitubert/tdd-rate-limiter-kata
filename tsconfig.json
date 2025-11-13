@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "lib": ["esnext"],
+    "types": ["node", "jest"],
+    // Required
+    "module": "commonjs",
+    "esModuleInterop": true,
+    // Consult your bundler’s documentation
+    // Recommended
+    "noEmit": true, // or `emitDeclarationOnly`
+    "allowImportingTsExtensions": true,
+    "allowArbitraryExtensions": true,
+    "verbatimModuleSyntax": false,
+    "strict": true
+  }
+} 
