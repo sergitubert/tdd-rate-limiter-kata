@@ -15,7 +15,7 @@ export class RateLimiter {
     this.isFilled = false;
   }
 
-  isMessageAllowed() {
+  isRequestAllowed() {
     const now = Date.now();
     const oldestTimestamp = this.buffer[this.writePointer];
     if(this.isFilled && (now - oldestTimestamp) < (this.slidingWindowSeconds * 1000)) {
